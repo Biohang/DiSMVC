@@ -3,13 +3,15 @@ This repository contains the source code used in our paper titled DiSMVC: a mult
 
 # Introduction
 In this study, we propose a novel computational method called DiSMVC to measure disease similarity. DiSMVC is a supervised graph collaborative framework including two major modules cross-view graph contrastive learning and association pattern joint learning. The former aims to enrich disease representation by considering their underlying molecular mechanism from both genetic and transcriptional views, while the latter can capture deep association patterns by incorporating phenotypically interpretable multimorbidities in a supervised manner. Experimental results indicated that DiSMVC can identify molecularly interpretable similar diseases, and the synergies gained from DiSMVC contributed to its superior performance in measuring disease similarity. 
-![image](https://github.com/Biohang/DiSMVC/blob/main/Image/Fig1.jpg)
+![image](https://github.com/Biohang/DiSMVC/blob/main/Image/Fig1.jpg)  
 **Figure.1**. The framework of DiSMVC. There are two main steps: (i) Cross-view graph contrastive learning. Gene interaction network and miRNA similarity network are constructed, based on that node features are extracted by considering their proximity structures via different graph representation algorithms. Graph contrastive learning is implemented to further refine the hidden features of genes and miRNAs. (ii) Association pattern joint learning. Average pooling and concatenate strategies are applied to obtain initial disease pair features based on various prior bio-entity networks. Multi-layer perceptron models are jointly learned to detect hidden association patterns and predict disease similarity scores. 
 
 # Datasets
-The prepocessed data of various bio-entity networks are stored in .npz compressed file format, including:
-d2g.npz (disease-gene association network) 
-gene2miRNA.npz (gene-miRNA interaction network)
-hnet.npz (gene interaction network)
-miRNA2disease.npz (disease-miRNA association network)
-miRNA2miRNA.npz (miRNA similarity network)
+The prepocessed data of various bio-entity networks are stored in .npz compressed file format, including:  
+-----d2g.npz (disease-gene association network)   
+-----gene2miRNA.npz (gene-miRNA interaction network)  
+-----hnet.npz (gene interaction network)  
+-----miRNA2disease.npz (disease-miRNA association network)  
+-----miRNA2miRNA.npz (miRNA similarity network)  
+
+The prepocessed data of entity ID mapping are stored in .txt file format, including:  
