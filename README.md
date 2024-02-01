@@ -14,4 +14,13 @@ The prepocessed data of various bio-entity networks are stored in .npz compresse
 -----miRNA2disease.npz (disease-miRNA association network)  
 -----miRNA2miRNA.npz (miRNA similarity network)  
 
-The prepocessed data of entity ID mapping are stored in .txt file format, including:  
+The prepocessed data of bio-entity ID mapping are stored in .txt file format, including:    
+-----dis2id.txt (mapping disease UMLS ID to disease index)   
+-----gene2id.txt (mapping gene Entrez ID to gene index)  
+-----miRNA2id.txt (mapping miRNA name to miRNA index) 
+
+The samples and lables for training and testing phases, including:  
+-----train_for_ukb_ori_sample.txt (training disease pairs)  
+-----test_sample_ukb_interpre_high.txt (testing disease pairs)  
+-----train_for_ukb_ori_label.txt (labels for training samples)  
+-----test_label_ukb_interpre_high.txt (labels for testing samples)  
