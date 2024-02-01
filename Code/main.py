@@ -60,7 +60,7 @@ projection_dis_miRNA = Projection_dis_miRNA(args.h_dim, args.h_dim)
 attention_dis = Attention_dis(args.h_dim)
 dis_score = Dis_score(args.h_dim)
 model = DiSMVC(g_encoder, m_encoder, projection_dis_gene,projection_dis_miRNA,attention_dis,dis_score)
-trainer = Trainer(model, tau=args.tau, log_every_n_steps=args.log_every_n_steps, device=device)
+trainer = Trainer(model, tau=args.tau,device=device)
 trainer.load_data(g_data, m_data, g2m, d2g,m2d, args.data)
 print("Finish initialization")
 
