@@ -24,3 +24,7 @@ The samples and lables for training and testing phases, including:
 -----test_sample_ukb_interpre_high.txt (testing disease pairs)  
 -----train_for_ukb_ori_label.txt (labels for training samples)  
 -----test_label_ukb_interpre_high.txt (labels for testing samples)  
+
+# Usage
+Basic environment setup: 
+
