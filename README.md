@@ -26,7 +26,16 @@ The samples and lables for training and testing phases, including:
 -----test_label_ukb_interpre_high.txt (labels for testing samples)  
 
 # Usage
------Basic environment setup: python 3.8, cuda 11.3, pytorch 1.12.0  
+Basic environment setup: 
+-----python 3.8  
+-----cuda 11.3
+-----pytorch 1.12.0  
+
+Training and Testing  
+Training codes includes the scripts in ./Code/main.py and ./Code/trainer.py. model.py records the neural network models in DiSMVC and utils.py records the basic functional functions. DiSMVC will be tested after training.  
+
+
+
 
 
 
