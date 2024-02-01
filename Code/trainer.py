@@ -20,10 +20,9 @@ def pooling(x, y2x):
 
     
 class Trainer(object):
-    def __init__(self, model, tau, log_every_n_steps, device):
+    def __init__(self, model, tau, device):
         self.model = model.to(device)
         self.tau = tau
-        self.log_every_n_steps = log_every_n_steps
         self.device = device
         self.writer = SummaryWriter()
         
