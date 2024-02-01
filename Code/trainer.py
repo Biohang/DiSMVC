@@ -82,8 +82,8 @@ class Trainer(object):
             loss_1_m = self.nce_loss_m(g_h, m_h, self.labels)
             loss_1 = 0.3 * loss_1_g + 0.7 * loss_1_m
             
-			# Construct features for training disease pairs 
-			d_h_1 = pooling(g_h, self.d2g.to_dense())
+            # Construct features for training disease pairs 
+            d_h_1 = pooling(g_h, self.d2g.to_dense())
             d_h_2 = pooling(m_h, self.m2d.to_dense())
             d_train_1 = torch.cat((d_h_1[d2d_edge_index[:, 0],], d_h_1[d2d_edge_index[:, 1],]), 1)
             d_train_2 = torch.cat((d_h_2[d2d_edge_index[:, 0],], d_h_2[d2d_edge_index[:, 1],]), 1)
