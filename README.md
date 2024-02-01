@@ -26,5 +26,7 @@ The samples and lables for training and testing phases, including:
 -----test_label_ukb_interpre_high.txt (labels for testing samples)  
 
 # Usage
-Basic environment setup: 
+-----Basic environment setup: python 3.8, cuda 11.3, pytorch 1.12.0  
+
+
 
